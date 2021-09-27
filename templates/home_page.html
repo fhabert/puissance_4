@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %} Home Page {% endblock %}
+{% block infos %}
+<p class="ask-name"> What're your names? </p>
+<form method="post">
+<div class="align-items-center row justify-content-center">
+    <div class="col-2">
+      <input class="form-control input-form" aria-describedby="passwordHelpInline" type="text" name="name1"/>
+    </div>
+    <div class="col-2">
+        <input class="form-control input-form" aria-describedby="passwordHelpInline" type="text" name="name2"/>
+      </div>
+</div>
+<div class="row justify-content-center">
+    <button type="submit" value="submit" class="btn btn-primary btn-confirm col-1 ">Confirm</button>
+</div>
+</form>
+<p class="row justify-content-center"> Good Luck! </p>
+<style>
+    
+.ask-name {
+    margin-top: 60px;
+    text-align:center;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.input-confirm {
+    display: inline-block;
+    padding: 30px;
+}
+
+.btn-confirm {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+</style>
+{% endblock %}

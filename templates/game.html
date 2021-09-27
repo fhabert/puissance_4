@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %} Let's play {% endblock %}
+{% block hello %}
+<link rel="stylesheet" href="{{ url_for('static', filename='game.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='game.js')}}">
+<!-- <script>""</script> -->
+{% endblock %}
+{% block grille %}
+<h3 class="greeting_players text-center">Let's see who's going to win between {{name1}} and {{name2}}</h3>
+<div>
+    <p id="posDirHTML" hidden>{{posDir}}</p>
+    <p id="dic1" hidden>{{posDir1}}</p>
+    <p id="dic2" hidden>{{posDir2}}</p>
+</div>
+<div class="grille">
+    <div class="column-square d-flex">
+        <div id="square-00" class="blue-square"> <a href="/game/00"><div class="inner-square"> </div></a> </div>
+        <div id="square-01" class="blue-square"> <a href="/game/01"><div class="inner-square"> </div></a> </div>
+        <div id="square-02" class="blue-square"> <a href="/game/02"><div class="inner-square"> </div></a> </div>
+        <div id="square-03" class="blue-square"> <a href="/game/03"><div class="inner-square"> </div></a> </div>
+        <div id="square-04" class="blue-square"> <a href="/game/04"><div class="inner-square"> </div></a> </div>
+    </div>
+    <div class="column-square d-flex">
+        <div id="square-10" class="blue-square"> <a href="/game/10"><div class="inner-square"> </div></a></div>
+        <div id="square-11" class="blue-square"> <a href="/game/11"><div class="inner-square"> </div></a></div>
+        <div id="square-12" class="blue-square"> <a href="/game/12"><div class="inner-square"> </div></a></div>
+        <div id="square-13" class="blue-square"> <a href="/game/13"><div class="inner-square"> </div></a></div>
+        <div id="square-14" class="blue-square"> <a href="/game/14"><div class="inner-square"> </div></a></div>
+    </div>
+    <div class="column-square d-flex">
+        <div id="square-20" class="blue-square"> <a href="/game/20"><div class="inner-square"> </div></a></div>
+        <div id="square-21" class="blue-square"> <a href="/game/21"><div class="inner-square"> </div></a></div>
+        <div id="square-22" class="blue-square"> <a href="/game/22"><div class="inner-square"> </div></a></div>
+        <div id="square-23" class="blue-square"> <a href="/game/23"><div class="inner-square"> </div></a></div>
+        <div id="square-24" class="blue-square"> <a href="/game/24"><div class="inner-square"> </div></a></div>
+    </div>
+    <div class="column-square d-flex">
+        <div id="square-30" class="blue-square"> <a href="/game/30"><div class="inner-square"> </div></a></div>
+        <div id="square-31" class="blue-square"> <a href="/game/31"><div class="inner-square"> </div></a></div>
+        <div id="square-32" class="blue-square"> <a href="/game/32"><div class="inner-square"> </div></a></div>
+        <div id="square-33" class="blue-square"> <a href="/game/33"><div class="inner-square"> </div></a></div>
+        <div id="square-34" class="blue-square"> <a href="/game/34"><div class="inner-square"> </div></a></div>
+    </div>
+    <div class="column-square d-flex">
+        <div id="square-40" class="blue-square"> <a href="/game/40"><div class="inner-square"> </div></a> </div>
+        <div id="square-41" class="blue-square"> <a href="/game/41"><div class="inner-square"> </div></a></div>
+        <div id="square-42" class="blue-square"> <a href="/game/42"><div class="inner-square"> </div></a></div>
+        <div id="square-43" class="blue-square"> <a href="/game/43"><div class="inner-square"> </div></a></div>
+        <div id="square-44" class="blue-square"> <a href="/game/44"><div class="inner-square"> </div></a></div>
+    </div>
+</div>
+
+<form action="/logout" method="post" class="row justify-content-center">
+    <button type="submit" value="submit" class="btn btn-danger btn-confirm col-1 ">Logout</button>
+</form>
+
+{% endblock %}

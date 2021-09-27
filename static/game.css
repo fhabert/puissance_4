@@ -1,0 +1,67 @@
+.grille {
+    border: 5px solid;
+    height: 500px;
+    width: 480px;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+    
+.inner-square {
+    height: 80px;
+    border: 1px solid transparent;
+    width: 80px;
+}
+.blue-square {
+    height: 98px;
+    width: 94px; 
+    color:blue;
+    border: 1.8px solid;
+    border-radius: 10%;
+}
+
+.yellow-square {
+    height: 95px;
+    background-color: rgb(240, 240, 66);
+    border-radius: 10px;
+    width: 95px;
+}
+
+.blue-square:hover {
+    background-color: rgb(220,220,220);
+}
+
+.column-square {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.piece_rouge {
+    border-radius: 50%;
+    background-color:red;
+    width: 60px;
+    height: 60px;
+    z-index:2;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.piece_bleue {
+    border-radius: 50%;
+    background-color:blue;
+    width: 60px;
+    height: 60px;
+    z-index:2;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.greeting_players {
+    font-size: 25px;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+
+
